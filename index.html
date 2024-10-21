@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geometrizer App</title>
+    <title>Geometizer - Circle Calculator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Geometrizer App</h1>
-        <select id="shapeSelect">
-            <option value="">Select a shape</option>
-            <option value="circle">Circle</option>
-            <option value="square">Square</option>
-            <option value="triangle">Triangle</option>
-        </select>
-        <input type="color" id="colorInput" value="#ff0000">
-        <button onclick="drawShape()">Draw Shape</button>
-        
-        <div id="canvasContainer" class="canvas-container"></div>
+        <h1>Geometizer</h1>
+        <h2>Circle Area and Circumference Calculator</h2>
+        <div class="input-group">
+            <label for="radius">Enter Radius (in units):</label>
+            <input type="number" id="radius" placeholder="Enter radius" min="0" step="any" required>
+        </div>
+        <button id="calculateBtn">Calculate</button>
+        <div class="results">
+            <h3>Results:</h3>
+            <p>Area: <span id="area">0.00</span> square units</p>
+            <p>Circumference: <span id="circumference">0.00</span> units</p>
+        </div>
     </div>
 
     <script src="script.js"></script>
