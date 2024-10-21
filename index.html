@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometrizer App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Geometrizer App</h1>
+        <select id="shapeSelect">
+            <option value="">Select a shape</option>
+            <option value="circle">Circle</option>
+            <option value="square">Square</option>
+            <option value="triangle">Triangle</option>
+        </select>
+        <input type="color" id="colorInput" value="#ff0000">
+        <button onclick="drawShape()">Draw Shape</button>
+        
+        <div id="canvasContainer" class="canvas-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
